@@ -1,81 +1,85 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site</title>
+    <style>
+        #header {
+            text-align: center;
+        }
 
-    <title>Document</title>
+        #lists {
+            display: table;
+            margin: auto;
+        }
 
-   
-
-       <style>
-      .img-container {
-        text-align: center;
-      }
+        table,th,td {
+            border: 1px solid black;
+        }
     </style>
-    
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body style="background-color:white;">
-
-    <!-- ading some text to the page -->
-    
-
-    <h1>CISC3141</h1>
-    <h1>STATIC SITE</h1>
-    <center><img src="webdev.jpg"  style="float:left;width:50;height:50;"></center>
-    <i>The following items are required for purchase to attend the next class:</i>
-    <li>computer</li>
-    <li>mouse</li>
-    <li>keyboard</li>
-    <li>printer</li>
-   <p> <i>The class will focus on three things</i></p>
-   <ol>1. Frond End</ol>
-   <ol>2. Back End</ol>
-   <ol>3. FullStack</ol>
-   <p> <i>The following is the schedule for course:</i></p>
-    <p>
-<style>
-table, th, td {
-border:1px solid black;
-}
-</style>
 <body>
-
-<table style="width:100%" >
-<tr>
-<th>Course Name</th>
-<th>Meetings Date and Time</th>
-<th>Price</th>
-</tr>
-<tr>
-<td>CSC 28</td>
-<td>06/2020-08/2020 9am-1pm</td>
-<td>$1789</td>
-</tr>
-<tr>
-<td>CSC 29</td>
-<td>09/2020-10/2020 1pm-3pm</td>
-<td>$1542</td>
-  
-</tr>
-<tr>
-<td>CSC 30</td>
-<td>07/2020-09/2020 8am-12pm</td>
-<td>$1982</td>
-</tr>
-<tr>
-
-</table>
-    <a href="url">To register, email to: register@domain.com OR click the following link www.ciscwebdev.com</a>
-    </p>
-
+    <div id="header">
+        <h1>CISC 3141</h1>
+        <h1 style="font-weight: lighter;">Static Site</h1>
+        <img src="pics/coverpic.jpg" alt="Not Available">
+    </div>
     
+    <div id="lists">
+        <h4 style="font-style:oblique; font-weight: lighter;">
+            The following items are required for purchase to attend the next class:
+        </h4>
+        <ul>
+            <li>Computer</li>
+            <li>Mouse</li>
+            <li>keyboard</li>
+            <li>printer</li>
+        </ul>
 
+        <h4 style="font-style: oblique; font-weight: lighter;">
+            The class will focus on three things:
+        </h4>
+        <ol>
+            <li>Front-end</li>
+            <li>Back-end</li>
+            <li>Full-stack</li>
+        </ol>
+    </div>
+ 
+    <h4 style=" text-align: center; font-style: oblique; font-weight: lighter; text-decoration: underline;">
+    The following is the schedule for the course:
+    </h4>
+    <table class = "table">
+        <tr>
+          <th>Course Name</th>
+          <th>Meeting Dates & Time</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>CSC 28</td>
+          <td>06/2020-08/2020 9am-1pm</td>
+          <td>$1789</td>
+        </tr>
+        <tr>
+          <td>CSC 29</td>
+          <td>09/2020-10/2020 1pm-3pm</td>
+          <td>$1542</td>
+        </tr>
+        <tr>
+            <td>CSC 30</td>
+            <td>07/2020-09/2020 8am-12pm</td>
+            <td>$1982</td>
+          </tr>
+      </table>
+      <br>
+      <p style="text-align: center; color: blue">
+          To register, email to: <u>register@domain.com </u>
+          OR click the following link <a href="#">www.ciscdev.com</a>
+      </p>
 
-    <!-- adding a button on the page -->
-
-    
 
 </body>
-
 </html>
